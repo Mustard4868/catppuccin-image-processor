@@ -1,0 +1,8 @@
+# Images
+*.png
+*.webp
+*.jpg
+*.jpeg
+
+# Binaries
+*.out
