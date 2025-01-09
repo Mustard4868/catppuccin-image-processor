@@ -27,47 +27,127 @@ cv::Vec3b closestColor(const cv::Vec3b& pixel, const std::vector<cv::Vec3b>& pal
 }
 
 std::vector<cv::Vec3b> getPalette(const std::string& paletteName) {
-    if (paletteName == "macchiato") {
+    if (paletteName == "latte") {
         return {
-            {120, 138, 244}, // Rosewater
-            {198, 198, 240}, // Flamingo
-            {230, 189, 245}, // Pink
-            {246, 160, 198}, // Mauve
-            {150, 135, 237}, // Red
-            {160, 153, 238}, // Maroon
-            {127, 169, 245}, // Peach
-            {159, 212, 238}, // Yellow
-            {149, 218, 166}, // Green
-            {202, 213, 139}, // Teal
-            {227, 215, 145}, // Sky
-            {228, 196, 125}, // Sapphire
-            {244, 173, 138}, // Blue
-            {248, 189, 183}, // Lavender
-            {245, 211, 202}, // Text
-            {224, 192, 184}, // Subtext 1
-            {203, 173, 165}, // Subtext 2
-            {183, 154, 147}, // Overlay 2
-            {162, 135, 128}, // Overlay 1
-            {141, 115, 110}, // Overlay 0
-            {120, 96, 91},   // Surface 2./
-            {100, 77, 73},   // Surface 1
-            {79, 58, 54},    // Surface 0
-            {58, 39, 36},    // Base
-            {48, 32, 30},    // Mantle
-            {38, 25, 24}     // Crust
+            {120, 138, 220},    // Rosewater
+            {120, 120, 221},    // Flamingo
+            {203, 118, 234},    // Pink
+            {239, 57, 136},     // Mauve
+            {57, 15, 210},      // Red
+            {83, 69, 230},      // Maroon
+            {11, 100, 254},     // Peach
+            {29, 142, 223},     // Yellow
+            {43, 160, 64},      // Green
+            {153, 146, 23},     // Teal
+            {229, 165, 4},      // Sky
+            {181, 159, 32},     // Sapphire
+            {245, 102, 30},     // Blue
+            {253, 135, 114},    // Lavender
+            {105, 79, 76},      // Text
+            {119, 95, 92},      // Subtext 1
+            {133, 111, 108},    // Subtext 0
+            {147, 127, 124},    // Overlay 2
+            {161, 143, 140},    // Overlay 1
+            {176, 160, 156},    // Overlay 0
+            {190, 176, 172},    // Surface 2
+            {204, 192, 188},    // Surface 1
+            {218, 208, 204},    // Surface 0
+            {245, 241, 239},    // Base
+            {239, 233, 230},    // Mantle
+            {232, 224, 220}     // Crust
         };
-    } else if (paletteName == "solarized") {
+    }
+    else if (paletteName == "frappe") {
         return {
-            {54, 43, 0},      // Base03 (BGR format)
-            {66, 54, 7},      // Base02
-            {117, 110, 88},   // Base01
-            {131, 123, 101},  // Base00
-            {150, 148, 131},  // Base0
-            {161, 161, 147},  // Base1
-            {227, 246, 253},  // Base3
-            {0, 137, 181}     // Yellow
+            {207, 213, 242},    // Rosewater
+            {190, 190, 238},    // Flamingo
+            {228, 184, 244},    // Pink
+            {230, 158, 202},    // Mauve
+            {132, 130, 231},    // Red
+            {156, 153, 234},    // Maroon
+            {118, 159, 239},    // Peach
+            {144, 200, 229},    // Yellow
+            {137, 209, 166},    // Green
+            {190, 200, 129},    // Teal
+            {219, 209, 153},    // Sky
+            {220, 193, 133},    // Sapphire
+            {238, 170, 140},    // Blue
+            {241, 187, 186},    // Lavender
+            {245, 208, 198},    // Text
+            {226, 191, 181},    // Subtext 1
+            {206, 173, 165},    // Subtext 0
+            {187, 156, 148},    // Overlay 2
+            {167, 139, 131},    // Overlay 1
+            {148, 121, 115},    // Overlay 0
+            {128, 104, 98},     // Surface 2
+            {109, 87, 81},      // Surface 1
+            {89, 69, 65},       // Surface 0
+            {70, 52, 48},       // Base
+            {60, 44, 41},       // Mantle
+            {52, 38, 35}        // Crust
         };
-    } else {
+    }
+    else if (paletteName == "macchiato") {
+        return {
+            {120, 138, 244},    // Rosewater
+            {198, 198, 240},    // Flamingo
+            {230, 189, 245},    // Pink
+            {246, 160, 198},    // Mauve
+            {150, 135, 237},    // Red
+            {160, 153, 238},    // Maroon
+            {127, 169, 245},    // Peach
+            {159, 212, 238},    // Yellow
+            {149, 218, 166},    // Green
+            {202, 213, 139},    // Teal
+            {227, 215, 145},    // Sky
+            {228, 196, 125},    // Sapphire
+            {244, 173, 138},    // Blue
+            {248, 189, 183},    // Lavender
+            {245, 211, 202},    // Text
+            {224, 192, 184},    // Subtext 1
+            {203, 173, 165},    // Subtext 2
+            {183, 154, 147},    // Overlay 2
+            {162, 135, 128},    // Overlay 1
+            {141, 115, 110},    // Overlay 0
+            {120, 96, 91},      // Surface 2
+            {100, 77, 73},      // Surface 1
+            {79, 58, 54},       // Surface 0
+            {58, 39, 36},       // Base
+            {48, 32, 30},       // Mantle
+            {38, 25, 24}        // Crust
+        };
+    }
+    else if (paletteName == "moccha") {
+        return {
+            {220, 224, 245},    // Rosewater
+            {205, 205, 242},    // Flamingo
+            {231, 194, 245},    // Pink
+            {247, 194, 203},    // Mauve
+            {168, 139, 243},    // Red
+            {172, 160, 235},    // Maroon
+            {135, 179, 250},    // Peach
+            {175, 226, 249},    // Yellow
+            {161, 227, 166},    // Green
+            {213, 226, 148},    // Teal
+            {235, 220, 137},    // Sky
+            {236, 199, 116},    // Sapphire
+            {250, 180, 137},    // Blue
+            {254, 190, 180},    // Lavender
+            {244, 214, 205},    // Text
+            {222, 194, 186},    // Subtext 1
+            {200, 173, 166},    // Subtext 2
+            {178, 153, 147},    // Overlay 2
+            {156, 132, 127},    // Overlay 1
+            {134, 112, 108},    // Overlay 0
+            {112, 91, 88},      // Surface 2
+            {90, 71, 69},       // Surface 1
+            {68, 50, 49},       // Surface 0
+            {46, 30, 30},       // Base
+            {37, 24, 24},       // Mantle
+            {27, 17, 17}        // Crust
+        };
+    }
+    else {
         throw std::invalid_argument("Unknown palette: " + paletteName);
     }
 }
