@@ -117,7 +117,7 @@ std::vector<cv::Vec3b> getPalette(const std::string& paletteName) {
             {38, 25, 24}        // Crust
         };
     }
-    else if (paletteName == "moccha") {
+    else if (paletteName == "mocha") {
         return {
             {220, 224, 245},    // Rosewater
             {205, 205, 242},    // Flamingo
